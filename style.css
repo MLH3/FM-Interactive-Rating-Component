@@ -20,7 +20,8 @@ body {
   align-items: center;
   padding: 1rem;
   font-family: var(--font);
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
+  overflow: hidden;
 }
 
 p {
@@ -92,6 +93,7 @@ button {
 }
 
 .rating_section button:active,
+.rating_section button:focus,
 .active_state {
   background-color: var(--orange);
   color: var(--white);
