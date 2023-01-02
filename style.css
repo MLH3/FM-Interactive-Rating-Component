@@ -18,14 +18,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   font-family: var(--font);
-  /* box-sizing: border-box; */
-  overflow: hidden;
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
 }
 
@@ -34,8 +31,8 @@ p {
   padding: 1rem 1.5rem;
   box-sizing: border-box;
   border-radius: 1rem;
-  max-width: 350px;
-  max-height: 350px;
+  width: 380px;
+  min-height: 352px;
 }
 
 .circle {
@@ -72,7 +69,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2rem 0 1.5rem;
+  margin: 1.5rem 0;
 }
 
 button {
@@ -106,7 +103,7 @@ button {
   width: 100%;
   display: block;
   text-align: center;
-  padding: 1rem;
+  padding: 0.7rem;
   box-sizing: border-box;
   border-radius: 2rem;
   margin: 1rem 0;
@@ -116,6 +113,7 @@ button {
 }
 
 .rating_section a:hover,
+.rating_section a:focus,
 .rating_section a:active {
   background-color: var(--white);
   color: var(--orange);
@@ -173,11 +171,10 @@ footer {
   left: 0;
   right: 0;
   padding: 1rem;
-  z-index: -10;
 }
 
-@media screen and (min-width: 900px) {
-  .rating_section a {
-    padding: 0.6rem 1rem;
+@media screen and (max-width: 600px) {
+  .container {
+    width: 320px;
   }
 }
